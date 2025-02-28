@@ -359,6 +359,7 @@ class CardFieldView(context: ThemedReactContext) : FrameLayout(context) {
     })
   }
 
+  @SuppressLint("RestrictedApi")
   private fun setPostalCodeFilter(countryCode: CountryCode) {
     cardInputWidgetBinding.postalCodeEditText.filters = arrayOf(
       *cardInputWidgetBinding.postalCodeEditText.filters,
