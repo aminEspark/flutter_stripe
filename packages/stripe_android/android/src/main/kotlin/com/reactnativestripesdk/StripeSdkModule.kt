@@ -124,13 +124,13 @@ class StripeSdkModule(val reactContext: ReactApplicationContext) : ReactContextB
     )
   }
 
-  override fun getConstants(): MutableMap<String, Any> =
-    hashMapOf(
-      "API_VERSIONS" to hashMapOf(
-        "CORE" to ApiVersion.API_VERSION_CODE,
-        "ISSUING" to PushProvisioningProxy.getApiVersion(),
-      )
-    )
+  // override fun getConstants(): MutableMap<String, Any> =
+  //   hashMapOf(
+  //     "API_VERSIONS" to hashMapOf(
+  //       "CORE" to ApiVersion.API_VERSION_CODE,
+  //       "ISSUING" to PushProvisioningProxy.getApiVersion(),
+  //     )
+  //   )
 
   @ReactMethod
   fun initialise(params: ReadableMap, promise: Promise) {
